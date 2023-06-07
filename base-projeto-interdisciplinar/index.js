@@ -28,7 +28,7 @@ app.post('/pessoas', async function(req, res){
     res.json(pessoas.rows);
   } catch (error) {
     console.error('Erro ao inserir pessoas:', error);
-    res.status(500).json({ error: 'Ocorreu um erro ao buscar pessoas' });
+    res.status(500).json({ error: 'Ocorreu um erro ao inserir pessoas' });
   }
 });
 
